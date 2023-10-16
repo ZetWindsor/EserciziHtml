@@ -7,6 +7,9 @@
     content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>HTML Lesson</title>
+  <style>table, th, td {
+    border: 1px solid black;
+  }</style>
 </head>
 
 <body>
@@ -18,10 +21,10 @@
     </thead>
     <tbody>
       <tr>
-        <td>Mesi</td>
-        <td>entrate</td>
-        <td>uscite</td>
-        <td>totale mensile</td>
+        <th>Mesi</th>
+        <th>entrate</th>
+        <th>uscite</th>
+        <th>totale mensile</th>
       </tr>
       <tr class="gennaio">
         <td id="gennaio">gennaio</td>
@@ -107,15 +110,16 @@
 
       </tr>
       <tr>
-        <tr class="totale">
-          <td id="totale">totale annuo</td>
-          <td>60000</td>
-          <td>8400</td>
-          <td>51600</td>
-         
-      </tr>
 
     </tbody>
+    <tfoot>
+      <tr class="totale">
+        <td id="totale">totale annuo</td>
+        <td>60000</td>
+        <td>8400</td>
+        <td>51600</td>
+      </tr>
+    </tfoot>
 
   </table>
 

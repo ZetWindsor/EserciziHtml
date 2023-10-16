@@ -9,23 +9,23 @@
   <title>HTML Lesson</title>
 </head>
 
-<body>
+<body><form action="/action_page.php" method="get">
 
   <button disabled>disabilitato</button>
 
   <fieldset>
-    <label for="number"></label>
-    <input type="number" name="number" min="0" max="100" step="2" autofocus>
+    <label for="number">numeri</label>
+    <input type="number" name="number" id="number" min="0" max="100" step="2" autofocus>
   </fieldset>
 
   <label for="checkbox">gia selezionato</label>
-  <input type="checkbox" name="checkbox" checked>
+  <input type="checkbox" name="checkbox" id="checkbox" checked>
   <label for="data">input di data</label>
-  <input type="date" name="data">
+  <input type="date" name="data" id="data">
 
 
 
-
+</form>
 
 
 

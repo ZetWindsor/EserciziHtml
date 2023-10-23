@@ -8,72 +8,78 @@
   <title>HTML Lesson esercizio <Form></Form>
   </title>
   <style>
-    label {
-      display: block;
-    }
+
   </style>
 </head>
 
 <body>
-  <fieldset style="width: 300px">
-    <legend>compila i campi</legend>
-    <form>
-      <label for="email">email:</label>
+  <legend>compila i campi</legend>
+  <form>
+    <div><label for="email">email:</label>
       <input type="email" name="email" id="email" placeholder="mariorossi@gmail.com">
+    </div>
 
-      <label for="password">password:</label>
+    <div><label for="password">password:</label>
       <input type="password" name="password" id="password">
+    </div>
 
-      <label for="name">nome:</label>
+    <div><label for="name">nome:</label>
       <input type="text" name="name" id="name" placeholder="Mario">
+    </div>
 
-      <label for="last_name">cognome:</label>
+    <div> <label for="last_name">cognome:</label>
       <input type="text" name="last_name" id="last_name" placeholder="rossi">
+    </div>
 
-      <label for="birth"> data di nascita</label>
+    <div> <label for="birth"> data di nascita</label>
       <input type="date" name="birth" id="birth">
+    </div>
 
-      <label for="tel">numero di telefono</label>
+    <div> <label for="tel">numero di telefono</label>
       <input type="tel" name="tel" id="tel">
+    </div>
 
-      <label for="Choosin_plans">Scegli il tuo piano</label>
-      <select name="Choosin_plans" id="Choosin_plans">
-        <option value="free">Gratis</option>
-        <option value="poor">piano poveri</option>
-        <option value="medium">paino benestanti</option>
-        <option value="rich">paino ricchi</option>
-      </select>
+    <div>
+      <div><label for="Choosin_plans">Scegli il tuo piano</label>
+        <select name="Choosin_plans" id="Choosin_plans">
+          <option value="free">Gratis</option>
+          <option value="poor">piano poveri</option>
+          <option value="medium">paino benestanti</option>
+          <option value="rich">paino ricchi</option>
+        </select>
+      </div>
       <div class="checkbox_PRO">
         <label for="PRO"></label>
         <input type="checkbox" name="PRO" id="PRO"> piano PRO
       </div>
+    </div>
 
-        <fieldset>
+    <div>
+      <div> <label for="credit_card"> inserisci la carta di credio :</label>
+        <input type="tel" name="credit_card" id="credit_card" placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9]"
+          maxlength="19" style="width: 180px;">
+      </div>
 
-          <label for="credit_card"> inserisci la carta di credio :</label>
-          <input type="tel" name="credit_card" id="credit_card" placeholder="XXXX XXXX XXXX XXXX" pattern="[0-9]"
-            maxlength="19" style="width: 180px;">
+      <div> <label for="CVC"> CVC:</label>
+        <input type="tel" name="CVC" id="CVC" placeholder="123" pattern="[0-9]" maxlength="3">
 
-          <label for="CVC"> CVC:</label>
-          <input type="tel" name="CVC" id="CVC" placeholder="123" pattern="[0-9]" maxlength="3">
+      </div>
+      <div> <label for="expiration_date"> Data di scadenza</label>
+        <input type="date" name="expiration_date" id="expiration_date">
+      </div>
 
-          <label for="expiration_date"> Data di scadenza</label>
-          <input type="date" name="expiration_date" id="expiration_date">
+      <div> <label for="Billing_addres">insersci l'indirizzo di fatturazione</label>
+        <input type="text" name="Billing_addres" id="Billing_addres">
+      </div>
 
-
-          <label for="Billing_addres">insersci l'indirizzo di fatturazione</label>
-          <input type="text" name="Billing_addres" id="Billing_addres">
-
-
-        </fieldset>
+    </div>
 
 
 
 
-        <button>invia</button>
+    <button>invia</button>
 
-    </form>
-  </fieldset>
+  </form>
 
 
 
